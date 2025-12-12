@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Design Systems: Why Micro-interactions Matter</title>
+  <meta name="description" content="An article exploring micro-interactions in design systems — structure built with semantic HTML only." />
+</head>
+<body>
+  <!-- SITE HEADER -->
+  <header role="banner">
+    <div>
+      <h1>Satyam Journal</h1>
+      <p lang="en">Thoughts on design, front-end engineering & product</p>
+    </div>
+
+    <!-- MAIN NAVIGATION -->
+    <nav role="navigation" aria-label="Primary navigation">
+      <ul>
+        <li><a href="#" aria-current="page">Home</a></li>
+        <li><a href="#">Articles</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- PAGE LAYOUT: main content + aside -->
+  <main role="main">
+    <!-- ARTICLE: main readable content -->
+    <article aria-labelledby="article-title" id="post-101">
+      <header>
+        <h2 id="article-title">Design Systems: Why Micro-interactions Matter</h2>
+        <p>
+          <strong>By</strong> <span>Satyam Kumar Jha</span>
+          — <time datetime="2025-12-12">December 12, 2025</time>
+        </p>
+        <p>
+          <small>Estimated read: <strong>7 minutes</strong></small>
+        </p>
+      </header>
+
+      
+      <figure>
+        <!-- plain, descriptive alt text used for accessibility -->
+        <img src="https://miro.medium.com/1*v3CYh3DnyxbkUU4TbqAqNw.jpeg" alt="Abstract illustration representing interactions" width="900" height="300">
+        <figcaption>Micro-interactions make products feel alive.</figcaption>
+      </figure>
+
+      <!-- ARTICLE BODY divided into logical sections -->
+      <section aria-labelledby="intro">
+        <h3 id="intro">Introduction</h3>
+        <p>
+          Micro-interactions are tiny, focused moments when a user interacts with a product:
+          liking a post, toggling a switch, or seeing a subtle animation when a task completes.
+          They’re small, but they shape perception and polish.
+        </p>
+      </section>
+
+      <section aria-labelledby="why">
+        <h3 id="why">Why they matter</h3>
+        <p>
+          Consider two identical features — one with a polished micro-interaction and one without.
+          Users consistently rate the polished one as more usable and trustworthy. That perception
+          drives retention.
+        </p>
+
+        <ol>
+          <li>Provide feedback (confirm actions)</li>
+          <li>Guide attention (where to look next)</li>
+          <li>Create continuity (connect actions and results)</li>
+        </ol>
+      </section>
+
+      <section aria-labelledby="examples">
+        <h3 id="examples">Practical examples</h3>
+
+        <h4>1. Button confirmation</h4>
+        <p>Change the label to 'Saved' and show a micro-check when an item is saved.</p>
+
+        <h4>2. Input validation</h4>
+        <p>Instant field-level validation prevents confusion at form submission.</p>
+
+        <blockquote>
+          <p>
+            “Good micro-interactions reduce cognitive load — users don't need to guess what happened.”
+          </p>
+          <footer>— UX Research, 2024</footer>
+        </blockquote>
+      </section>
+
+      <!-- TABLE: show article metadata or comparison (semantic table) -->
+      <section aria-labelledby="meta">
+        <h3 id="meta">Article metadata</h3>
+
+        <table summary="List of key article details and metrics">
+          <caption>Metadata & metrics</caption>
+          <thead>
+            <tr>
+              <th scope="col">Metric</th>
+              <th scope="col">Value</th>
+              <th scope="col">Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Reading time</th>
+              <td>7 minutes</td>
+              <td>Estimated for an average reader</td>
+            </tr>
+            <tr>
+              <th scope="row">Sections</th>
+              <td>5</td>
+              <td>Intro, Why, Examples, Implementation, Conclusion</td>
+            </tr>
+            <tr>
+              <th scope="row">References</th>
+              <td>3</td>
+              <td>Design patterns & research papers</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section aria-labelledby="conclusion">
+        <h3 id="conclusion">Conclusion</h3>
+        <p>
+          Adding thoughtful micro-interactions is not cosmetic — it reduces friction and signals
+          craftsmanship. Start with feedback and consistency, measure behaviour, then iterate.
+        </p>
+      </section>
+
+      <!-- ARTICLE FOOTER: tags + related links -->
+      <footer>
+        <p>Tags:
+          <a href="#" rel="tag">UX</a>,
+          <a href="#" rel="tag">Design Systems</a>,
+          <a href="#" rel="tag">Front-end</a>
+        </p>
+
+        <nav aria-label="Related articles">
+          <h4>Related</h4>
+          <ul>
+            <li><a href="#">Motion Design Basics</a></li>
+            <li><a href="#">System Tokens & Theming</a></li>
+          </ul>
+        </nav>
+      </footer>
+    </article>
+
+    <!-- ASIDE: complementary content -->
+    <aside role="complementary" aria-labelledby="aside-title">
+      <h3 id="aside-title">About the author</h3>
+      <p><strong>Satyam Kumar Jha</strong> is a front-end engineer focused on design systems and accessible UX.</p>
+
+      <h4>Subscribe</h4>
+      <!-- FORM: subscribe form (semantic, labelled, accessible) -->
+      <form action="#" method="post" aria-label="Subscribe to newsletter">
+        <fieldset>
+          <legend>Subscribe to weekly insights</legend>
+
+          <div>
+            <label for="name">Full name</label><br>
+            <input id="name" name="name" type="text" placeholder="Your name" required>
+          </div>
+
+          <div>
+            <label for="email">Email address</label><br>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required>
+          </div>
+
+          <div>
+            <label for="frequency">Frequency</label><br>
+            <select id="frequency" name="frequency">
+              <option value="weekly" selected>Weekly</option>
+              <option value="monthly">Monthly</option>
+            </select>
+          </div>
+
+          <div>
+            <button type="submit">Subscribe</button>
+          </div>
+        </fieldset>
+      </form>
+
+      <h4>Quick stats</h4>
+      <dl>
+        <dt>Articles</dt>
+        <dd>42</dd>
+        <dt>Followers</dt>
+        <dd>4.7k</dd>
+      </dl>
+    </aside>
+  </main>
+
+  <!-- SITE FOOTER -->
+  <footer role="contentinfo">
+    <small>
+      © <time datetime="2025">2025</time> Satyam Journal — Built with semantic HTML.
+      <a href="#" hreflang="en">Privacy</a> · <a href="#" hreflang="en">Terms</a>
+    </small>
+  </footer>
+
+  <!-- OPTIONAL: comment form placed after article for readers -->
+  <section aria-labelledby="comments" id="comments">
+    <h3 id="comments-title">Leave a comment</h3>
+
+    <form action="#" method="post" aria-describedby="comments-help">
+      <p id="comments-help">Your email will not be published. Required fields are marked *</p>
+
+      <div>
+        <label for="comment-name">Name *</label><br>
+        <input id="comment-name" name="comment-name" type="text" required>
+      </div>
+
+      <div>
+        <label for="comment-email">Email *</label><br>
+        <input id="comment-email" name="comment-email" type="email" required>
+      </div>
+
+      <div>
+        <label for="comment-body">Comment *</label><br>
+        <textarea id="comment-body" name="comment-body" rows="5" required></textarea>
+      </div>
+
+      <div>
+        <button type="submit">Post comment</button>
+      </div>
+    </form>
+  </section>
+</body>
+</html>
